@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,7 +30,7 @@ class StationListPage extends ConsumerWidget {
           },
           child: Icon(CupertinoIcons.arrow_left),
         ),
-        title: stationStateToggleRef ? Text('출발역') : Text('도착역'),
+        title: stationStateToggleRef ? Text('etc.departure'.tr()) : Text('etc.arrival'.tr()),
         centerTitle: true,
       ),
       body: ListView.separated(

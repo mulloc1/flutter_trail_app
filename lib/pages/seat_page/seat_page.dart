@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_trail_app/pages/seat_page/seat_page_provider.dart';
@@ -53,7 +54,7 @@ class SeatPage extends ConsumerWidget {
             context.go(ref.read(homeRouteProvider));
           },
         ),
-        title: Text('좌석 선택'),
+        title: Text('appbar.seat_page'.tr()),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -104,7 +105,7 @@ class SeatPage extends ConsumerWidget {
                         child: SizedBox(width: 24, height: 24),
                       ),
                       SizedBox(width: 5),
-                      Text('선택됨'),
+                      Text('etc.selected'.tr()),
                     ],
                   ),
                   SizedBox(width: 15),
@@ -118,7 +119,7 @@ class SeatPage extends ConsumerWidget {
                         child: SizedBox(width: 24, height: 24),
                       ),
                       SizedBox(width: 5),
-                      Text('선택됨'),
+                      Text('etc.selected'.tr()),
                     ],
                   ),
                 ],
@@ -202,7 +203,7 @@ class SeatPage extends ConsumerWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              '예매 하시겠습니까?',
+                              'etc.question'.tr(),
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18,
@@ -224,7 +225,7 @@ class SeatPage extends ConsumerWidget {
                                     onPressed: () => Navigator.of(context).pop(),
                                     style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 16)),
                                     child: Text(
-                                      '취소',
+                                      'etc.cancel'.tr(),
                                       style: TextStyle(color: Colors.red, fontSize: 16),
                                     ),
                                   ),
@@ -237,7 +238,7 @@ class SeatPage extends ConsumerWidget {
                                     },
                                     style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 16)),
                                     child: Text(
-                                      '확인',
+                                      'etc.confirm'.tr(),
                                       style: TextStyle(color: Colors.blue, fontSize: 16),
                                     ),
                                   ),
@@ -256,8 +257,8 @@ class SeatPage extends ConsumerWidget {
                     ),
                     padding: const EdgeInsets.symmetric(vertical: 15),
                   ),
-                  child: const Text(
-                    '예매 하기',
+                  child: Text(
+                    'button.seat_page'.tr(),
                     style: TextStyle(
                       color: Colors.white, // 글자 색상: Colors.white
                       fontSize: 18, // 글자 크기: 18

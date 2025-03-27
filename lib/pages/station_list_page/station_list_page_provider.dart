@@ -1,24 +1,23 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final stationsListProvider = Provider<List<String>>((ref) {
   return [
-    '수서',
-    '동탄',
-    '평택지제',
-    '천안아산',
-    '오송',
-    '대전',
-    '김천구미',
-    '동대구',
-    '경주',
-    '울산',
-    '부산',
+    'stations.suseo'.tr(),
+    'stations.pyenongtaek_jije'.tr(),
+    'stations.Osong'.tr(),
+    'stations.daejeon'.tr(),
+    'stations.gimcheon_gumi'.tr(),
+    'stations.dongdaegu'.tr(),
+    'stations.gyeongju'.tr(),
+    'stations.ulsan'.tr(),
+    'stations.busan'.tr(),
   ];
 });
 
-final sourceStationStateProvider = StateProvider<String> ((ref) => '선택');
+final sourceStationStateProvider = StateProvider<String> ((ref) => 'etc.choose'.tr());
 
-final destinationStationStateProvider = StateProvider<String> ((ref) => '선택');
+final destinationStationStateProvider = StateProvider<String> ((ref) => 'etc.choose'.tr());
 
 final stationStateToggleProvider = StateProvider<bool> ((ref) => true);
 

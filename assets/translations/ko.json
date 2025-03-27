@@ -1,0 +1,31 @@
+{
+  "appbar": {
+    "home_page": "기차 예매",
+    "seat_page": "좌석 선택"
+  },
+  "button": {
+    "home_page": "좌석 선택",
+    "seat_page": "예매 하기"
+  },
+  "stations": {
+    "busan": "부산",
+    "suseo": "수서",
+    "pyenongtaek_jije": "평택지제",
+    "Osong": "오송",
+    "daejeon": "대전",
+    "gimcheon_gumi": "김천구미",
+    "dongdaegu": "동대구",
+    "gyeongju": "경주",
+    "ulsan": "울산"
+  },
+  "etc": {
+    "question": "예매 하시겠습니까?",
+    "choose": "선택",
+    "departure": "출발역",
+    "arrival": "도착역",
+    "selected": "선택됨",
+    "seat": "좌석",
+    "confirm": "확인",
+    "cancel": "취소"
+  }
+}

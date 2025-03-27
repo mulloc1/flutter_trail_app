@@ -1,12 +1,12 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 class DirectionButton extends ConsumerWidget {
-  final String text;
   final String direction;
 
-  const DirectionButton({super.key, required this.text, required this.direction});
+  const DirectionButton({super.key, required this.direction});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -25,7 +25,7 @@ class DirectionButton extends ConsumerWidget {
           padding: const EdgeInsets.symmetric(vertical: 15),
         ),
         child: Text(
-          '좌석 선택',
+          'button.seat_page'.tr(),
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),

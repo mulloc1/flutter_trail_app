@@ -1,0 +1,31 @@
+{
+  "appbar": {
+    "home_page": "Book a Train",
+    "seat_page": "Choose Your Seat"
+  },
+  "button": {
+    "home_page": "Select a Seat",
+    "seat_page": "Proceed to Booking"
+  },
+  "stations": {
+    "busan": "Busan",
+    "suseo": "Suseo",
+    "pyenongtaek_jije": "Pyeongtaek Jije",
+    "Osong": "Osong",
+    "daejeon": "Daejeon",
+    "gimcheon_gumi": "Gimcheon Gumi",
+    "dongdaegu": "Dongdaegu",
+    "gyeongju": "Gyeongju",
+    "ulsan": "Ulsan"
+  },
+  "etc": {
+    "question": "do you want to book?",
+    "choose": "Choose",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "selected": "Selected",
+    "seat": "Seat",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  }
+}

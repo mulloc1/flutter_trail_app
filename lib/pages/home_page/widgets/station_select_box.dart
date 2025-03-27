@@ -1,9 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_trail_app/route/routes_provider.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../providers/theme_provider.dart';
 import '../../station_list_page/station_list_page_provider.dart';
 
 class StationSelectBox extends ConsumerWidget {
@@ -20,7 +20,7 @@ class StationSelectBox extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '도착역',
+              'etc.arrival'.tr(),
               style: TextStyle(
                 fontSize: 16, // 글자 크기: 16
                 color: Colors.grey, // 글자 색상: Colors.grey
@@ -49,7 +49,7 @@ class StationSelectBox extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '출발역',
+              'etc.departure'.tr(),
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.grey),
             ),
             SizedBox(height: 10),
